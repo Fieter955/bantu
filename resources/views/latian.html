@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laatian HTML</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: "satu dua empat"
+                                  "tiga tiga empat";
+
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 2px;
+            text-align: center;
+        }
+
+       .satu {
+        grid-area: satu;
+        background-color: aquamarine;
+       }
+
+       .dua {
+        grid-area: dua;
+        background-color: aquamarine;
+       }
+       .tiga {
+        grid-area: tiga;
+        background-color: aquamarine;
+       }
+       .empat {
+        grid-area: empat;
+        background-color: aquamarine;
+        padding: 100px;
+       }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+
+</body>
+
+</html>
